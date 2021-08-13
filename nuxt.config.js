@@ -17,6 +17,11 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
   ssr: false,
+  server: {
+    port: 3000,
+    host: '0.0.0.0',
+    timing: false
+  },
 
   publicRuntimeConfig: {
     apiBaseUrl: 'http://localhost:8000',
