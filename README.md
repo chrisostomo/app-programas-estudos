@@ -1,69 +1,58 @@
-# app
+# PROGRAMA DE ESTUDOS (APP)
 
-## Build Setup
+Exibe página de programa de estudos, baseado nos filtros escolhidos pelo usuário (Banca e Órgão). O programa de estudos exibe uma árvore com assuntos e quantidade de questões disponíveis.
 
-```bash
-# install dependencies
-$ yarn install
+![app](https://maisqueonline.com.br/app1.png "app")
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+## Arquitetura
 
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+```
+1) Back-end - API RESTful
+  - PHP 7 
+  - Slim Framework
+  - ORM Eloquent
+  - Migrations Phinx
+2) Front-end
+  - Vue 
+  - Nuxt
+  - Vuetify
+3) DB
+  - MySQL
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
-
-## Special Directories
-
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+## MER
+![MER](https://maisqueonline.com.br/MER.png "MER")
 
 
-### `pages`
+## INSTALAÇÃO
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+- Clone do Workspace
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+`   git clone https://github.com/chrisostomo/programa-de-estudos.git`
 
-### `plugins`
+- Dentro da Workspace clone o back-end e o front-end
 
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+`   git clone https://github.com/chrisostomo/api-programa-estudos.git`
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+`   git clone https://github.com/chrisostomo/app-programas-estudos.git`
 
-### `static`
+- A estrutura de pastas deve ficar assim:
+```
+- programa-de-estudos
+  - api-programa-estudos
+  - app-programas-estudos
+```
 
-This directory contains your static files. Each file inside this directory is mapped to `/`.
+### EXECUTAR SERVIÇO
 
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
+`docker-compose up`
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+### APÓS A INSTALAÇÃO DE TODOS OS CONTAINERS ACESSE:
 
-### `store`
+`http://localhost:3000/`
 
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+```
+...
+    IMPORTANTE: O back-end roda na porta 8000.
+...
+```
